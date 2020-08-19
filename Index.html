@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-size: 20px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: red;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: red;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+h1, h2{
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 25%; 
+}
+body {
+  background-image: url('my.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1{
+  color: green;
+  background-color: white;
+}
+p{
+  background-color: white;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+</style>
+</head>
+<body>
+  <script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div class="navbar">
+<a href="#home">Home</a>
+<a href="timeline.html">My Timeline</a>
+<a href="Form.html">Contact Me!!</a>
+<a href="Youtube channel.html">My Youtube Channel</a>
+<a href="My journey with Trinity.html">My Journey With Trinity College London</a>
+<a href="Pics.html">My Pictures With My Family</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">What I Know In Javascript
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Cal.html">Javascript Calculator</a>
+    <a href="My clock.html">Javascript Clock</a>
+    <a href="Moving box.html">Javascript Animations</a>
+    <a href="Alert.html">Javascript Alert Messages</a>
+  </div>
+  </div> 
+</div>
+  <background img src= my.jpg>
+
+<h1><u>Aarav Kapur (The Budding Drummer)</u></h1> 
+<p> Greetings fellow viewers! I am Aarav Kapur. A 12 year old boy who has a dream to travel the whole world. I study in Lancers International, an IB World School. I am also known as "The Budding Drummer". Which is also my youtube channel's name. Drumming is truly my passion. If you want to check out some of my awesome videos, click "My Youtube Channel" in bar above. Enjoy watching my webpage. </p>
+</body>
+</html>

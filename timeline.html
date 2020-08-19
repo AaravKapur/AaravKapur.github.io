@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Timeline</title>
+	<style type="text/css">
+		body{
+			background-color: maroon;
+		}
+		.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: red;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: red;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+	</style>
+</head>
+<body>
+	<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div class="navbar">
+  <a href="Index.html">Home</a>
+  <a href="timeline.html">My Timeline</a>
+   <a href="Form.html">Contact Me!!</a>
+    <a href="Youtube channel.html">My Youtube Channel</a>
+    <a href="My journey with Trinity.html">My Journey With Trinity College London</a>
+    <a href="Pics.html">My Pictures With My Family</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">What I Know In Javascript
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Cal.html">Javascript Calculator</a>
+    <a href="My clock.html">Javascript Clock</a>
+    <a href="Moving box.html">Javascript Animations</a>
+    <a href="Alert.html">Javascript Alert Messages</a>
+  </div>
+  </div> 
+</div>
+<h1>My Timeline</h1>
+<img src="Mytimeline1.jpg" height="1000px" width="500px"> <img src="Mytimeline.jpg" height="1000px" width="500px">
+</body>
+</html>

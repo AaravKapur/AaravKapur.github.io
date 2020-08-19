@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Journey With Trinity College London</title>
+	<style type="text/css">
+		body{
+			background-color: pink;
+			color: blue;
+		}
+		h1, h2{
+			color: grey;
+		}
+		p{
+			font-size: 22px;
+		}
+		.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: red;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: red;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+<a href="Index.html">Home</a>
+<a href="timeline.html">My Timeline</a>
+<a href="Form.html">Contact Me!!</a>
+<a href="Youtube channel.html">My Youtube Channel</a>
+<a href="My journey with Trinity.html">My Journey With Trinity College London</a>
+<a href="Pics.html">My Pictures With My Family</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">What I Know In Javascript
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Cal.html">Javascript Calculator</a>
+    <a href="My clock.html">Javascript Clock</a>
+    <a href="Moving box.html">Javascript Animations</a>
+    <a href="Alert.html">Javascript Alert Messages</a>
+  </div>
+  </div> 
+</div>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+      <h1>What Is The Trinity College London?</h1>
+      <p>Trinity College London is a leading international exam board and independent education charity that has been providing assessments around the world since 1877. They specialise in the assessment of communicative and performance skills covering music, drama, combined arts and English language.</p>
+
+      <p>With over 850,000 candidates a year in more than 60 countries worldwide, Trinity qualifications are specifically designed to help students progress.</p>
+
+      <h2>My Connection</h2>
+      <p>I have been doing the Trinity College London course for more than 3 years. I have gone through a great continuos journey which is still on. I have recieved certificates scoring 2 merits and 4 distinctions. The pictures of my certificates have been shown below. I took exams for 3 subjects:-
+      1. Communication Skills.
+      2. Speech and Drama.
+      3. Performance arts. 
+      My journey with Trininy has been spectacular. I look forward to many more years, me being associated with Trinity which can help to bring out the best in me, as a confident theater personality. <STRONG>Thank You Trinity!!</STRONG></p>
+      <img src="ics.png" height="400" width="350">
+      <img src="cs1.png" height="400" width="350">
+      <img src="cs2.png" height="400" width="350">
+      <img src="cs3.png" height="400" width="350">
+      <img src="sad1.png" height="400" width="350">
+      <img src="sad2.png" height="400" width="350">
+      <img src="pa3.png" height="400" width="350">
+</body>
+</html>
